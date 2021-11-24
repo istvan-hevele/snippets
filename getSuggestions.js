@@ -68,5 +68,6 @@
     }
   };
   const getSuggestions = (searchPhrase) => new Promise(resolve => setTimeout(() => resolve(searchBinary(searchPhrase, words, false)), Math.random() * 2000));
+  root.words = words;
   root.getSuggestions = getSuggestions;
 }.call(this));
